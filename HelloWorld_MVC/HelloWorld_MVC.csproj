@@ -74,6 +74,40 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\pure\base-context-min.css" />
+    <Content Include="Content\pure\base-context.css" />
+    <Content Include="Content\pure\base-min.css" />
+    <Content Include="Content\pure\base.css" />
+    <Content Include="Content\pure\buttons-core-min.css" />
+    <Content Include="Content\pure\buttons-core.css" />
+    <Content Include="Content\pure\buttons-min.css" />
+    <Content Include="Content\pure\buttons.css" />
+    <Content Include="Content\pure\forms-core-min.css" />
+    <Content Include="Content\pure\forms-core.css" />
+    <Content Include="Content\pure\forms-min.css" />
+    <Content Include="Content\pure\forms-nr-min.css" />
+    <Content Include="Content\pure\forms-nr.css" />
+    <Content Include="Content\pure\forms.css" />
+    <Content Include="Content\pure\grids-core-min.css" />
+    <Content Include="Content\pure\grids-core.css" />
+    <Content Include="Content\pure\grids-min.css" />
+    <Content Include="Content\pure\grids-nr-min.css" />
+    <Content Include="Content\pure\grids-nr.css" />
+    <Content Include="Content\pure\grids-units-min.css" />
+    <Content Include="Content\pure\grids-units.css" />
+    <Content Include="Content\pure\grids.css" />
+    <Content Include="Content\pure\menus-core-min.css" />
+    <Content Include="Content\pure\menus-core.css" />
+    <Content Include="Content\pure\menus-min.css" />
+    <Content Include="Content\pure\menus-nr-min.css" />
+    <Content Include="Content\pure\menus-nr.css" />
+    <Content Include="Content\pure\menus-paginator-min.css" />
+    <Content Include="Content\pure\menus-paginator.css" />
+    <Content Include="Content\pure\menus.css" />
+    <Content Include="Content\pure\pure-min.css" />
+    <Content Include="Content\pure\pure-nr-min.css" />
+    <Content Include="Content\pure\tables-min.css" />
+    <Content Include="Content\pure\tables.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -108,7 +142,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\pure\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
