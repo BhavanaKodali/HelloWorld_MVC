@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of HelloWorld_MVC.ChangePasswordModel)" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<HelloWorld_MVC.Models.ChangePasswordModel>" %>
 
 <asp:Content ID="changePasswordTitle" ContentPlaceHolderID="TitleContent" runat="server">
     Change Password
@@ -10,37 +10,37 @@
         Use the form below to change your password. 
     </p>
     <p>
-        New passwords are required to be a minimum of <%: ViewData("PasswordLength") %> characters in length.
+        New passwords are required to be a minimum of <%: ViewData["PasswordLength"] %> characters in length.
     </p>
 
-    <% Using Html.BeginForm() %>
-        <%: Html.ValidationSummary(True, "Password change was unsuccessful. Please correct the errors and try again.")%>
+    <% using (Html.BeginForm()) { %>
+        <%: Html.ValidationSummary(true, "Password change was unsuccessful. Please correct the errors and try again.") %>
         <div>
             <fieldset>
                 <legend>Account Information</legend>
                 
                 <div class="editor-label">
-                    <%: Html.LabelFor(Function(m) m.OldPassword) %>
+                    <%: Html.LabelFor(m => m.OldPassword) %>
                 </div>
                 <div class="editor-field">
-                    <%: Html.PasswordFor(Function(m) m.OldPassword) %>
-                    <%: Html.ValidationMessageFor(Function(m) m.OldPassword) %>
+                    <%: Html.PasswordFor(m => m.OldPassword) %>
+                    <%: Html.ValidationMessageFor(m => m.OldPassword) %>
                 </div>
                 
                 <div class="editor-label">
-                    <%: Html.LabelFor(Function(m) m.NewPassword) %>
+                    <%: Html.LabelFor(m => m.NewPassword) %>
                 </div>
                 <div class="editor-field">
-                    <%: Html.PasswordFor(Function(m) m.NewPassword) %>
-                    <%: Html.ValidationMessageFor(Function(m) m.NewPassword) %>
+                    <%: Html.PasswordFor(m => m.NewPassword) %>
+                    <%: Html.ValidationMessageFor(m => m.NewPassword) %>
                 </div>
                 
                 <div class="editor-label">
-                    <%: Html.LabelFor(Function(m) m.ConfirmPassword) %>
+                    <%: Html.LabelFor(m => m.ConfirmPassword) %>
                 </div>
                 <div class="editor-field">
-                    <%: Html.PasswordFor(Function(m) m.ConfirmPassword) %>
-                    <%: Html.ValidationMessageFor(Function(m) m.ConfirmPassword) %>
+                    <%: Html.PasswordFor(m => m.ConfirmPassword) %>
+                    <%: Html.ValidationMessageFor(m => m.ConfirmPassword) %>
                 </div>
                 
                 <p>
@@ -48,5 +48,5 @@
                 </p>
             </fieldset>
         </div>
-    <% End Using %>
+    <% } %>
 </asp:Content>

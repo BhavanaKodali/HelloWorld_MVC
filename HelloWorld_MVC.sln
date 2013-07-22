@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HelloWorld_MVC", "HelloWorld_MVC\HelloWorld_MVC.vbproj", "{A01B5B03-407E-42CF-98BE-DFE12BC75E7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld_MVC", "HelloWorld_MVC\HelloWorld_MVC.csproj", "{201F6FE5-3DA3-4496-9E7A-163A02B1B00D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A01B5B03-407E-42CF-98BE-DFE12BC75E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A01B5B03-407E-42CF-98BE-DFE12BC75E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A01B5B03-407E-42CF-98BE-DFE12BC75E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A01B5B03-407E-42CF-98BE-DFE12BC75E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201F6FE5-3DA3-4496-9E7A-163A02B1B00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201F6FE5-3DA3-4496-9E7A-163A02B1B00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201F6FE5-3DA3-4496-9E7A-163A02B1B00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201F6FE5-3DA3-4496-9E7A-163A02B1B00D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
